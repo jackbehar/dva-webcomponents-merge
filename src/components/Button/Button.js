@@ -2,14 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "@department-of-veterans-affairs/web-components/dist/esm-es5/va-button.entry";
-import "@department-of-veterans-affairs/web-components/dist/esm-es5/va-accordion.entry"
-import "@department-of-veterans-affairs/web-components/dist/esm-es5/va-accordion-item.entry"
 
 function Button(props) {
   return (
-    <div>
       <va-button {...props} />
-    </div>
   );
 }
 

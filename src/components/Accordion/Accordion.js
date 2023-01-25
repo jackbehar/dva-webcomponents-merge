@@ -5,18 +5,24 @@ import "@department-of-veterans-affairs/web-components/dist/esm-es5/va-accordion
 
 function Accordion(props) {
   return (
-    <div>
-      <va-accordion {...props}/>
-    </div>
+    <va-accordion {...props} />
   );
 }
 
 Accordion.propTypes = {
   /**
- * @uxpinignoreprop
- */
+  * @uxpinignoreprop
+  */
   children: PropTypes.node,
+
+  /**
+  * Whether or not the accordion items will have borders
+  */
   bordered: PropTypes.bool,
+
+  /**
+  * True if only a single item can be opened at once
+  */
   'open-single': PropTypes.bool,
 };
 

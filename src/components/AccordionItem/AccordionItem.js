@@ -15,24 +15,31 @@ function AccordionItem(props) {
 
 AccordionItem.propTypes = {
   children: PropTypes.node,
-  id: PropTypes.string,
+
   /**
-  * The text displayed on the button. If continue or back is true, the value of text is ignored 
+  * ID of the Accordion Item 
+  */
+  id: PropTypes.string,
+
+  /**
+  * The accordion item header text 
   */
   header: PropTypes.string,
-  subheader: PropTypes.string,
+
   /**
-  * If true, the button will use Continue as its text and an icon to represent proceeding forward in form flows. 
+  * Optional accordion item subheader text
   */
-  // level: PropTypes.oneOf(['1', '2', '3', '4', '5', '6']),
+  subheader: PropTypes.string,
+
+  /**
+  * Header level for button wrapper. Must be between 1 and 6 
+  */
   level: PropTypes.number,
 
   /**
-  * If true, the button will use Back as its text and an icon to represent going back in form flows.
+  * True if the item is open
   */
   open: PropTypes.bool,
-
-
 };
 
 export { AccordionItem as default };

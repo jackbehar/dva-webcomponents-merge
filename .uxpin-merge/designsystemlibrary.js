@@ -5663,14 +5663,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Accordion(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("va-accordion", props));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("va-accordion", props);
 }
 Accordion.propTypes = {
   /**
   * @uxpinignoreprop
   */
   children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node),
+  /**
+  * Whether or not the accordion items will have borders
+  */
   bordered: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  /**
+  * True if only a single item can be opened at once
+  */
   'open-single': (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool)
 };
 
@@ -5701,19 +5707,24 @@ function AccordionItem(props) {
 }
 AccordionItem.propTypes = {
   children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node),
+  /**
+  * ID of the Accordion Item 
+  */
   id: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
   /**
-  * The text displayed on the button. If continue or back is true, the value of text is ignored 
+  * The accordion item header text 
   */
   header: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  /**
+  * Optional accordion item subheader text
+  */
   subheader: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
   /**
-  * If true, the button will use Continue as its text and an icon to represent proceeding forward in form flows. 
+  * Header level for button wrapper. Must be between 1 and 6 
   */
-  // level: PropTypes.oneOf(['1', '2', '3', '4', '5', '6']),
   level: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number),
   /**
-  * If true, the button will use Back as its text and an icon to represent going back in form flows.
+  * True if the item is open
   */
   open: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool)
 };
@@ -5734,49 +5745,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _department_of_veterans_affairs_web_components_dist_esm_es5_va_button_entry__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @department-of-veterans-affairs/web-components/dist/esm-es5/va-button.entry */ "./node_modules/@department-of-veterans-affairs/web-components/dist/esm-es5/va-button.entry.js");
-/* harmony import */ var _department_of_veterans_affairs_web_components_dist_esm_es5_va_accordion_entry__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @department-of-veterans-affairs/web-components/dist/esm-es5/va-accordion.entry */ "./node_modules/@department-of-veterans-affairs/web-components/dist/esm-es5/va-accordion.entry.js");
-/* harmony import */ var _department_of_veterans_affairs_web_components_dist_esm_es5_va_accordion_item_entry__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @department-of-veterans-affairs/web-components/dist/esm-es5/va-accordion-item.entry */ "./node_modules/@department-of-veterans-affairs/web-components/dist/esm-es5/va-accordion-item.entry.js");
-
-
 
 
 
 function Button(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("va-button", props));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("va-button", props);
 }
 Button.propTypes = {
   /**
   * The text displayed on the button. If continue or back is true, the value of text is ignored 
   */
-  text: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string),
+  text: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
   /**
   * If true, the button will use Continue as its text and an icon to represent proceeding forward in form flows. 
   */
-  continue: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+  continue: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   /**
   * If true, the button will use Back as its text and an icon to represent going back in form flows.
   */
-  back: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+  back: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   /**
   * If true, the button will use the big variant.
   */
-  big: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+  big: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   /**
   * If true, the click event will not fire.
   */
-  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   /**
   * If true, the button will use the secondary variant.
   */
-  secondary: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
+  secondary: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   /**
   * If true, the button will submit form data when clicked.
   */
-  submit: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
-  onClick: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func)
+  submit: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  onClick: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().func)
 };
 
 
@@ -5799,15 +5806,13 @@ __webpack_require__.r(__webpack_exports__);
 // eslint-disable-next-line no-unused-vars
 
 
-const fontAwesome = document.createElement('link');
-fontAwesome.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
-fontAwesome.setAttribute('rel', 'stylesheet');
-document.head.appendChild(fontAwesome);
 function UXPinWrapper(_ref) {
   let {
     children
   } = _ref;
-  (0,_department_of_veterans_affairs_component_library___WEBPACK_IMPORTED_MODULE_1__.defineCustomElements)();
+  (0,_department_of_veterans_affairs_component_library___WEBPACK_IMPORTED_MODULE_1__.applyPolyfills)().then(() => {
+    (0,_department_of_veterans_affairs_component_library___WEBPACK_IMPORTED_MODULE_1__.defineCustomElements)();
+  });
   return children;
 }
 

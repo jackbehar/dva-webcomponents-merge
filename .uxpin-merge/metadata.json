@@ -139,6 +139,9 @@
                     "children": [
                       {
                         "uxpinPresetElementId": "accordion-item-1"
+                      },
+                      {
+                        "uxpinPresetElementId": "accordion-item-2"
                       }
                     ]
                   }
@@ -146,10 +149,17 @@
                 "accordion-item-1": {
                   "name": "AccordionItem",
                   "props": {
-                    "children": "testing",
-                    "header": "Accordion Item Headline",
-                    "id": "first",
-                    "level": 2
+                    "children": "This is Accordion Item 1 text.",
+                    "header": "First Accordion Item",
+                    "id": "first"
+                  }
+                },
+                "accordion-item-2": {
+                  "name": "AccordionItem",
+                  "props": {
+                    "children": "This is Accordion Item 2 text.",
+                    "header": "Second Accordion Item",
+                    "id": "second"
                   }
                 }
               },
@@ -169,7 +179,7 @@
               }
             },
             {
-              "description": "",
+              "description": "Whether or not the accordion items will have borders",
               "isRequired": false,
               "name": "bordered",
               "type": {
@@ -178,7 +188,7 @@
               }
             },
             {
-              "description": "",
+              "description": "True if only a single item can be opened at once",
               "isRequired": false,
               "name": "open-single",
               "type": {
@@ -216,8 +226,7 @@
                   "props": {
                     "children": "Content of Accordion Item",
                     "header": "Accordion Item Headline",
-                    "id": "first",
-                    "level": 2
+                    "id": "first"
                   }
                 }
               },
@@ -236,7 +245,7 @@
               }
             },
             {
-              "description": "",
+              "description": "ID of the Accordion Item",
               "isRequired": false,
               "name": "id",
               "type": {
@@ -245,7 +254,7 @@
               }
             },
             {
-              "description": "The text displayed on the button. If continue or back is true, the value of text is ignored",
+              "description": "The accordion item header text",
               "isRequired": false,
               "name": "header",
               "type": {
@@ -254,7 +263,7 @@
               }
             },
             {
-              "description": "",
+              "description": "Optional accordion item subheader text",
               "isRequired": false,
               "name": "subheader",
               "type": {
@@ -263,7 +272,7 @@
               }
             },
             {
-              "description": "If true, the button will use Continue as its text and an icon to represent proceeding forward in form flows.",
+              "description": "Header level for button wrapper. Must be between 1 and 6",
               "isRequired": false,
               "name": "level",
               "type": {
@@ -272,7 +281,7 @@
               }
             },
             {
-              "description": "If true, the button will use Back as its text and an icon to represent going back in form flows.",
+              "description": "True if the item is open",
               "isRequired": false,
               "name": "open",
               "type": {
@@ -290,7 +299,7 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "14e66d211ac19caeea8336542f7113bf41ae5db0",
+    "commitHash": "b2a72741d469e0f65c0285d09c98988c8a0d56f4",
     "paths": {
       "configPath": "/Users/jackbehar/Documents/GitHub/dva-webcomponents-merge/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Documents/GitHub/dva-webcomponents-merge"

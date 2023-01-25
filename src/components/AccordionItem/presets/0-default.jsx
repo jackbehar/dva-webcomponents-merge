@@ -6,7 +6,6 @@ export default (
     uxpId="accordion-item-1"
     header="Accordion Item Headline"
     id="first"
-    level={2}
   >
     Content of Accordion Item
   </AccordionItem>
