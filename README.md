@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npx uxpin-merge --disable-tunneling`
 
-Launches the library in UXPin Merge EXPERIMENTAL mode.\
+Launches the library in UXPin Merge EXPERIMENTAL mode.
 
 ### `npx uxpin-merge push --token LIBRARY-TOKEN`
 
