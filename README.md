@@ -1,4 +1,4 @@
-# DAV Web Components Merge Tntegration 
+# DAV Web Components Merge Integration 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
