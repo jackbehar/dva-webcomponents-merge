@@ -1,0 +1,299 @@
+{
+  "categorizedComponents": [
+    {
+      "components": [
+        {
+          "defaultExported": true,
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/components/Button",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "src/components/Button/Button.js"
+            },
+            "presets": [
+              {
+                "path": "src/components/Button/presets/0-default.jsx"
+              }
+            ]
+          },
+          "name": "Button",
+          "presets": [
+            {
+              "elements": {
+                "button": {
+                  "name": "Button",
+                  "props": {
+                    "text": "Click me"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "button"
+            }
+          ],
+          "properties": [
+            {
+              "description": "The text displayed on the button. If continue or back is true, the value of text is ignored",
+              "isRequired": false,
+              "name": "text",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the button will use Continue as its text and an icon to represent proceeding forward in form flows.",
+              "isRequired": false,
+              "name": "continue",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the button will use Back as its text and an icon to represent going back in form flows.",
+              "isRequired": false,
+              "name": "back",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the button will use the big variant.",
+              "isRequired": false,
+              "name": "big",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the click event will not fire.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the button will use the secondary variant.",
+              "isRequired": false,
+              "name": "secondary",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the button will submit form data when clicked.",
+              "isRequired": false,
+              "name": "submit",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "onClick",
+              "type": {
+                "name": "func",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": []
+        },
+        {
+          "defaultExported": true,
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/components/Accordion",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "src/components/Accordion/Accordion.js"
+            },
+            "presets": [
+              {
+                "path": "src/components/Accordion/presets/0-default.jsx"
+              }
+            ]
+          },
+          "name": "Accordion",
+          "presets": [
+            {
+              "elements": {
+                "accordion-1": {
+                  "name": "Accordion",
+                  "props": {
+                    "children": [
+                      {
+                        "uxpinPresetElementId": "accordion-item-1"
+                      }
+                    ]
+                  }
+                },
+                "accordion-item-1": {
+                  "name": "AccordionItem",
+                  "props": {
+                    "children": "testing",
+                    "header": "Accordion Item Headline",
+                    "id": "first",
+                    "level": 2
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "accordion-1"
+            }
+          ],
+          "properties": [
+            {
+              "description": "",
+              "hidden": true,
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "bordered",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "open-single",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": []
+        },
+        {
+          "defaultExported": true,
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/components/AccordionItem",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "src/components/AccordionItem/AccordionItem.js"
+            },
+            "presets": [
+              {
+                "path": "src/components/AccordionItem/presets/0-default.jsx"
+              }
+            ]
+          },
+          "name": "AccordionItem",
+          "presets": [
+            {
+              "elements": {
+                "accordion-item-1": {
+                  "name": "AccordionItem",
+                  "props": {
+                    "children": "Content of Accordion Item",
+                    "header": "Accordion Item Headline",
+                    "id": "first",
+                    "level": 2
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "accordion-item-1"
+            }
+          ],
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "id",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The text displayed on the button. If continue or back is true, the value of text is ignored",
+              "isRequired": false,
+              "name": "header",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "subheader",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the button will use Continue as its text and an icon to represent proceeding forward in form flows.",
+              "isRequired": false,
+              "name": "level",
+              "type": {
+                "name": "number",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the button will use Back as its text and an icon to represent going back in form flows.",
+              "isRequired": false,
+              "name": "open",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": []
+        }
+      ],
+      "name": "General"
+    }
+  ],
+  "name": "Example Design System",
+  "vcs": {
+    "branchName": "master",
+    "commitHash": "56df152f3b75d615e31359da0e06ebbddb36eab3",
+    "paths": {
+      "configPath": "/Users/jackbehar/my-app/uxpin.config.js",
+      "projectRoot": "/Users/jackbehar/my-app"
+    }
+  }
+}

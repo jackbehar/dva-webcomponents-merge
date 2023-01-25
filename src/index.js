@@ -4,6 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import "@department-of-veterans-affairs/component-library/dist/main.css";
+
+import {
+  applyPolyfills,
+  defineCustomElements,
+} from "@department-of-veterans-affairs/component-library/";
+
+applyPolyfills().then(() => {
+  defineCustomElements();
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
