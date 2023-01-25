@@ -290,10 +290,10 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "56df152f3b75d615e31359da0e06ebbddb36eab3",
+    "commitHash": "106d2c05d50a96b8954b98a2b3e03dc22e8240ee",
     "paths": {
-      "configPath": "/Users/jackbehar/my-app/uxpin.config.js",
-      "projectRoot": "/Users/jackbehar/my-app"
+      "configPath": "/Users/jackbehar/Documents/GitHub/dva-webcomponents-merge/uxpin.config.js",
+      "projectRoot": "/Users/jackbehar/Documents/GitHub/dva-webcomponents-merge"
     }
   }
 }

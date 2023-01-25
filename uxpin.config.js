@@ -11,7 +11,7 @@ module.exports = {
       },
     ],
     wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
-    webpackConfig: './node_modules/react-scripts/config/webpack.config.js',
+    webpackConfig: './uxpin.webpack.config.js',
   },
-  name: 'Example Design System'
+  name: 'DVA Web Components'
 };
