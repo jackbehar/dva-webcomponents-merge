@@ -26,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "merge:test": "npx uxpin-merge --disable-tunneling",
+    "merge:push": "npx uxpin-merge push --token 42b602564bbd2baa9854679a00ae02b517903846"
   },
   "eslintConfig": {
     "extends": [
