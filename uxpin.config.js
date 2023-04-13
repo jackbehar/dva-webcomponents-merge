@@ -8,6 +8,7 @@ module.exports = {
           "src/components/Accordion/Accordion.js",
           "src/components/AccordionItem/AccordionItem.js",
           "src/components/TextInput/TextInput.js",
+          "src/components/Checkbox/Checkbox.js",
         ],
       },
     ],

@@ -5,11 +5,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
-    publicPath: "/dist/"
+    publicPath: "/dist/",
   },
   resolve: {
     modules: [__dirname, "node_modules"],
-    extensions: ["*", ".js", ".jsx"]
+    extensions: ["*", ".js", ".jsx"],
   },
   devtool: "source-map",
   module: {
@@ -27,21 +27,21 @@ module.exports = {
         ],
       },
       {
-        loader: require.resolve('babel-loader', { paths: ['./node_modules/@uxpin/merge-cli'] }),
+        loader: require.resolve("babel-loader", { paths: ["./node_modules/@uxpin/merge-cli"] }),
         test: /\.js?$/,
         exclude: /node_modules/,
         options: {
           presets: [
-            require.resolve('@babel/preset-env', { paths: ['./node_modules/@uxpin/merge-cli'] }),
-            require.resolve('@babel/preset-react', { paths: ['./node_modules/@uxpin/merge-cli'] })
+            require.resolve("@babel/preset-env", { paths: ["./node_modules/@uxpin/merge-cli"] }),
+            require.resolve("@babel/preset-react", { paths: ["./node_modules/@uxpin/merge-cli"] }),
           ],
-        }
+        },
       },
-    ]
+    ],
   },
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin({
-      maxChunks: 1
-    })
+      maxChunks: 1,
+    }),
   ],
-}
+};
