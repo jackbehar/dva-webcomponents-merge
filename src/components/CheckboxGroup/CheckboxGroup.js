@@ -2,9 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "@department-of-veterans-affairs/web-components/dist/esm-es5/va-checkbox-group.entry";
+import "@department-of-veterans-affairs/web-components/dist/esm-es5/va-checkbox.entry";
 
 function CheckboxGroup(props) {
-  return <va-checkbox-group {...props}>{props.children}</va-checkbox-group>;
+  return (
+    <va-checkbox-group {...props}>
+      <va-checkbox label="Test Checkbox" />
+    </va-checkbox-group>
+  );
 }
 
 CheckboxGroup.propTypes = {
