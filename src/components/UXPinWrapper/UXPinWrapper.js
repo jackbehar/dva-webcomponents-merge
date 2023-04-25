@@ -18,6 +18,14 @@ if (!document.getElementById("sourceSansProFont")) {
   document.head.appendChild(sourceSans);
 }
 
+if (!document.getElementById("foundation")) {
+  let foundation = document.createElement("link");
+  foundation.setAttribute("href", "https://unpkg.com/@department-of-veterans-affairs/formation/dist/formation.min.css");
+  foundation.setAttribute("rel", "stylesheet");
+  foundation.setAttribute("id", "foundation");
+  document.head.appendChild(foundation);
+}
+
 export default function UXPinWrapper({ children }) {
   applyPolyfills().then(() => {
     defineCustomElements();
