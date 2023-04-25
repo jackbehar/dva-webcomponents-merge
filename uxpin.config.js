@@ -7,7 +7,6 @@ module.exports = {
           "src/components/Button/Button.js",
           "src/components/Accordion/Accordion.js",
           "src/components/AccordionItem/AccordionItem.js",
-          "src/components/TextInput/TextInput.js",
           "src/components/Checkbox/Checkbox.js",
           "src/components/CheckboxGroup/CheckboxGroup.js",
         ],
