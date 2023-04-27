@@ -1,44 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "@department-of-veterans-affairs/web-components/dist/esm-es5/va-accordion-item.entry"
-
 function AccordionItem(props) {
-  return (
-      <va-accordion-item
-        {...props}
-      >
-        {props.children}
-      </va-accordion-item>
-  );
+  return <va-accordion-item {...props}>{props.children}</va-accordion-item>;
 }
 
 AccordionItem.propTypes = {
   children: PropTypes.node,
 
   /**
-  * ID of the Accordion Item 
-  */
+   * ID of the Accordion Item
+   */
   id: PropTypes.string,
 
   /**
-  * The accordion item header text 
-  */
+   * The accordion item header text
+   */
   header: PropTypes.string,
 
   /**
-  * Optional accordion item subheader text
-  */
+   * Optional accordion item subheader text
+   */
   subheader: PropTypes.string,
 
   /**
-  * Header level for button wrapper. Must be between 1 and 6 
-  */
+   * Header level for button wrapper. Must be between 1 and 6
+   */
   level: PropTypes.number,
 
   /**
-  * True if the item is open
-  */
+   * True if the item is open
+   */
   open: PropTypes.bool,
 };
 

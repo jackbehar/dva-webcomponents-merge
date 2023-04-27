@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "@department-of-veterans-affairs/web-components/dist/esm-es5/va-checkbox.entry";
-
 function Checkbox(props) {
   return <va-checkbox {...props} />;
 }

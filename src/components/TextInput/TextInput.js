@@ -1,10 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "@department-of-veterans-affairs/web-components/dist/esm/va-text-input.entry";
-
 function TextInput(props) {
-  // @ts-ignore
   return <va-text-input {...props} />;
 }
 
