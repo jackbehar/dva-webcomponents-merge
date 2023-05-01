@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { defineCustomElements } from "@department-of-veterans-affairs/component-library/";
+import "./App.scss"
 
 if (!document.getElementById("fontAwesome")) {
   let fontAwesome = document.createElement("link");
@@ -17,6 +18,7 @@ if (!document.getElementById("sourceSansProFont")) {
   sourceSans.setAttribute("id", "sourceSansProFont");
   document.head.appendChild(sourceSans);
 }
+    
 
 export default function UXPinWrapper({ children }) {
   defineCustomElements();
