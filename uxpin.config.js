@@ -10,6 +10,7 @@ module.exports = {
           "src/components/Checkbox/Checkbox.js",
           "src/components/CheckboxGroup/CheckboxGroup.js",
           "src/components/MemorableDate/MemorableDate.js",
+          "src/components/Select/Select.js",
           "src/components/TextInput/TextInput.js",
         ],
       },
