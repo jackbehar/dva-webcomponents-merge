@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { checkForUSWDS } from "../../utilities/v3-hack";
 
 function RadioGroup(props) {
+  checkForUSWDS(props);
   return <va-radio {...props} />;
 }
 
