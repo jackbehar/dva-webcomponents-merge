@@ -9,6 +9,11 @@ function Select(props) {
 
 Select.propTypes = {
   /**
+   * @uxpinignoreprop
+   */
+  children: PropTypes.node,
+
+  /**
    * Whether or not this is a required field.
    */
   required: PropTypes.bool,
