@@ -1,9 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { checkForUSWDS } from "../../utilities/v3-hack";
 
 function CheckboxGroup(props) {
-  checkForUSWDS(props);
   return <va-checkbox-group {...props} />;
 }
 

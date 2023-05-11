@@ -1,9 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { checkForUSWDS } from "../../utilities/v3-hack";
 
 function Accordion(props) {
-  checkForUSWDS(props);
   return <va-accordion {...props} />;
 }
 
