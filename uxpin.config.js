@@ -14,6 +14,7 @@ module.exports = {
           "src/components/RadioOption/RadioOption.js",
           "src/components/Select/Select.js",
           "src/components/TextInput/TextInput.js",
+          "src/components/Typography/Typography.js",
         ],
       },
     ],

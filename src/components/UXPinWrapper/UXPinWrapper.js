@@ -6,5 +6,5 @@ import "./styles.scss"
 export default function UXPinWrapper({ children }) {
   defineCustomElements();
 
-  return children;
+  return <div className="dva">{children}</div>;
 }
