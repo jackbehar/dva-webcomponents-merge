@@ -34,6 +34,8 @@ AccordionItem.propTypes = {
    * True if the item is open
    */
   open: PropTypes.bool,
+
+  uswds: PropTypes.bool,
 };
 
 export { AccordionItem as default };

@@ -37,7 +37,7 @@ Button.propTypes = {
    */
   submit: PropTypes.bool,
 
-  onClick: PropTypes.func,
+  uswds: PropTypes.bool,
 };
 
 export { Button as default };
