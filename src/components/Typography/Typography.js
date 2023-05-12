@@ -1,14 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { checkForUSWDS } from "../../utilities/v3-hack";
 import TypographyM from "@mui/material/Typography";
 import "./styles.scss";
 
 function Typography(props) {
-  checkForUSWDS(props);
-  return (
-      <TypographyM {...props}>{props.children}</TypographyM>
-  );
+  return <TypographyM {...props}>{props.children}</TypographyM>;
 }
 
 Typography.propTypes = {
@@ -22,25 +18,12 @@ Typography.propTypes = {
    * Map typography to html tag.
    * @uxpinpropname  Tag
    */
-  component: PropTypes.oneOf([
-    "h1",
-    "h2",
-    "h3",
-    "h4",
-    "h5",
-    "h6",
-    "p",
-    "span",
-    "a",
-    "ul",
-    "ol",
-    "li"
-  ]),
+  component: PropTypes.oneOf(["h1", "h2", "h3", "h4", "h5", "h6", "p", "span", "a", "ul", "ol", "li"]),
 
-    /**
+  /**
    * Override or extend the styles applied to the component.
    */
-    className: PropTypes.oneOf(["va-introtext", "bold"]),
+  className: PropTypes.oneOf(["va-introtext", "bold"]),
 
   /**
    * Alignment of text.
