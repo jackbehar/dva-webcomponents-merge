@@ -40,6 +40,11 @@ RadioGroup.propTypes = {
    * Insert a header with defined level inside the label (legend)
    */
   labelHeaderLevel: PropTypes.string,
+
+  /**
+  * The content of RadioGroup
+  */
+  children: PropTypes.node,
 };
 
 export { RadioGroup as default };
