@@ -1,0 +1,107 @@
+.dva {
+  display: grid;
+  // border:1px solid blue;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    // clear: both;
+    font-family: Bitter, Georgia, Cambria, Times New Roman, Times, serif;
+    line-height: 1.3;
+    margin-bottom: 0.5em;
+    color: #212121;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 1.7rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Roboto, Arial,
+      sans-serif;
+  }
+
+  .va-introtext {
+    font-family: Bitter, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 77rem;
+  }
+  .va-introtext,
+  .va-introtext p {
+    line-height: 1.7;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  a {
+    font-size: 1.6rem;
+    color: #0071bb;
+  }
+  a:active,
+  a:hover {
+    color: #003e73;
+  }
+  a:focus {
+    outline: 2px solid #f9c642;
+    outline-offset: 2px;
+  }
+  a:visited {
+    color: #4c2c92;
+  }
+  ul {
+    font-size: 1.6rem;
+    padding: 0 0 0 1.5em;
+    list-style: square;
+  }
+  ol {
+    font-size: 1.6rem;
+    margin: 0 0 0 1.25em;
+
+    list-style-position: outside;
+  }
+  ul li {
+    font-size: 1.6rem;
+    list-style-type: square;
+  }
+  ol li {
+    font-size: 1.6rem;
+    list-style-type: decimal;
+  }
+  ol > ul,
+  ol ol,
+  ul > ul,
+  ul ol {
+    margin: 0.5em 0 0.5em 1.2em;
+  }
+}

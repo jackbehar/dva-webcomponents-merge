@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@department-of-veterans-affairs/component-library": "^13.8.0",
+    "@department-of-veterans-affairs/component-library": "^16.2.0",
     "@department-of-veterans-affairs/formation": "^7.0.4",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,7 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@uxpin/merge-cli": "3.0.1",
+    "@uxpin/merge-cli": "^3.0.1",
     "css-loader": "^6.7.3",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
@@ -27,8 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "merge:test": "npx uxpin-merge --disable-tunneling",
-    "merge:push": "npx uxpin-merge push --token 42b602564bbd2baa9854679a00ae02b517903846"
+    "merge:test": "uxpin-merge --disable-tunneling",
+    "merge:push": "uxpin-merge push --token 42b602564bbd2baa9854679a00ae02b517903846"
   },
   "eslintConfig": {
     "extends": [
