@@ -9,6 +9,7 @@ body {
   color: initial !important;
 }
 
-va-button::part(button) {
+.usa-button.sc-va-button {
   width: 100%;
 }
+
