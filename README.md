@@ -1,4 +1,4 @@
-# DAV Web Components Merge Integration 
+# DVA Web Components Merge Integration
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -14,11 +14,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npx uxpin-merge --disable-tunneling`
+### `npm run merge:test`
 
 Launches the library in UXPin Merge EXPERIMENTAL mode.
 
-### `npx uxpin-merge push --token LIBRARY-TOKEN`
+### `npm run merge:push`
 
 Pushed components to the specified Merge library.
-

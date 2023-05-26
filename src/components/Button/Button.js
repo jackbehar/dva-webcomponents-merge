@@ -11,11 +11,11 @@ function Button(props) {
 
 Button.propTypes = {
   /**
-  * The text displayed on the button. If continue or back is true, the value of text is ignored 
+  * The text displayed on the button. If continue or back is true, the value of text is ignored
   */
   text: PropTypes.string,
   /**
-  * If true, the button will use Continue as its text and an icon to represent proceeding forward in form flows. 
+  * If true, the button will use Continue as its text and an icon to represent proceeding forward in form flows.
   */
   continue: PropTypes.bool,
   /**
