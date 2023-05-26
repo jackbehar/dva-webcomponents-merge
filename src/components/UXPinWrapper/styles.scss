@@ -9,6 +9,12 @@ body {
   color: initial !important;
 }
 
-.usa-button {
+va-button::part(button) {
   width: 100% !important;
+}
+
+@media (min-width: 30em) {
+  .usa-button {
+    width: 100% !important;
+  }
 }
